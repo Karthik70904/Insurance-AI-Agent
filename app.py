@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 import re
+import os
 
 app = Flask(__name__)
 
-API_KEY = "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"
+# Load API key securely from environment variable
+API_KEY = os.getenv("API_KEY")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 HEADERS = {
@@ -89,4 +91,4 @@ def chat():
     return jsonify({"reply": reply})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()

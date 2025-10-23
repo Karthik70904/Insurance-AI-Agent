@@ -612,11 +612,11 @@
 
     chatbox.innerHTML += `<p><strong>You:</strong> ${input}</p>`;
 
-    const res = await fetch("/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: input })
-    });
+    const res = await fetch("https://insurance-chatbot.onrender.com/chat", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ message: input })
+});
 
     const data = await res.json();
     let reply = data.reply;
