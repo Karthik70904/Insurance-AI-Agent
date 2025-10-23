@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance AI Agent - Claims, Policies & FAQ Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-icon">
+                    <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <div class="header-text">
+                    <h1>Insurance AI Agent</h1>
+                    <p>Claims, Policies & FAQ Support</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div class="messages-wrapper">
+                <div id="sample-data" class="sample-data-container">
+                    <div class="info-banner">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <div>
+                            <h3>Demo Mode - Sample Data Available</h3>
+                            <p>Click any sample number below to try the system with pre-loaded data</p>
+                        </div>
+                    </div>
+
+                    <div class="samples-grid">
+                        <div class="sample-category">
+                            <h4>Claims</h4>
+                            <div class="sample-items">
+                                <button class="sample-item" data-message="What is the status of CLM-2024-1001?">
+                                    <div class="sample-label">CLM-2024-1001</div>
+                                    <div class="sample-desc">Approved - Auto accident</div>
+                                </button>
+                                <button class="sample-item" data-message="What is the status of CLM-2024-1002?">
+                                    <div class="sample-label">CLM-2024-1002</div>
+                                    <div class="sample-desc">Under Review - Water damage</div>
+                                </button>
+                                <button class="sample-item" data-message="What is the status of CLM-2024-1003?">
+                                    <div class="sample-label">CLM-2024-1003</div>
+                                    <div class="sample-desc">Submitted - Medical emergency</div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="sample-category">
+                            <h4>Policies</h4>
+                            <div class="sample-items">
+                                <button class="sample-item" data-message="What is the status of POL-2024-001?">
+                                    <div class="sample-label">POL-2024-001</div>
+                                    <div class="sample-desc">Auto Insurance</div>
+                                </button>
+                                <button class="sample-item" data-message="What is the status of POL-2024-002?">
+                                    <div class="sample-label">POL-2024-002</div>
+                                    <div class="sample-desc">Home Insurance</div>
+                                </button>
+                                <button class="sample-item" data-message="What is the status of POL-2024-003?">
+                                    <div class="sample-label">POL-2024-003</div>
+                                    <div class="sample-desc">Health Insurance</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quick-actions" class="quick-actions">
+                    <button class="action-btn" data-message="How do I check my claim status?">
+                        <div class="action-icon action-blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                            </svg>
+                        </div>
+                        <span>Check Claim Status</span>
+                    </button>
+                    <button class="action-btn" data-message="How do I file an insurance claim?">
+                        <div class="action-icon action-green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <span>File a Claim</span>
+                    </button>
+                    <button class="action-btn" data-message="What does my policy cover?">
+                        <div class="action-icon action-purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <span>Policy Information</span>
+                    </button>
+                    <button class="action-btn" data-message="How do I contact customer service?">
+                        <div class="action-icon action-orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <span>Contact Support</span>
+                    </button>
+                </div>
+
+                <div id="messages" class="messages"></div>
+
+                <div id="loading" class="loading-indicator" style="display: none;">
+                    <div class="bot-avatar">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <div class="loading-bubble">
+                        <div class="loading-text">
+                            <span>Processing your request</span>
+                            <div class="loading-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="chat-footer">
+            <form id="chat-form" class="chat-form">
+                <input
+                    type="text"
+                    id="message-input"
+                    placeholder="Ask about claims, policies, or FAQs..."
+                    autocomplete="off"
+                >
+                <button type="submit" id="send-btn" class="send-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    <span>Send</span>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="agentService.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

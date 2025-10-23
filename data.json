@@ -1,0 +1,143 @@
+{
+  "sampleClaims": [
+    {
+      "claim_number": "CLM-2024-1001",
+      "policy_number": "POL-2024-001",
+      "claim_type": "accident",
+      "claim_amount": 5200,
+      "approved_amount": 5000,
+      "status": "approved",
+      "filed_date": "2024-09-15",
+      "last_updated": "2024-10-01",
+      "description": "Rear-end collision on Highway 101. Vehicle damage to bumper and trunk.",
+      "adjuster_notes": "Approved after review. Minor damage confirmed by adjuster.",
+      "estimated_completion": "2024-10-20"
+    },
+    {
+      "claim_number": "CLM-2024-1002",
+      "policy_number": "POL-2024-002",
+      "claim_type": "damage",
+      "claim_amount": 15000,
+      "approved_amount": 12000,
+      "status": "under_review",
+      "filed_date": "2024-10-01",
+      "last_updated": "2024-10-10",
+      "description": "Water damage from burst pipe in basement. Affects flooring and drywall.",
+      "adjuster_notes": "Adjuster visit scheduled for 10/15. Initial estimate provided.",
+      "estimated_completion": "2024-10-30"
+    },
+    {
+      "claim_number": "CLM-2024-1003",
+      "policy_number": "POL-2024-003",
+      "claim_type": "medical",
+      "claim_amount": 3500,
+      "approved_amount": 0,
+      "status": "submitted",
+      "filed_date": "2024-10-12",
+      "last_updated": "2024-10-12",
+      "description": "Emergency room visit for appendicitis. Surgery required.",
+      "adjuster_notes": "Documents received. Under initial review.",
+      "estimated_completion": "2024-10-25"
+    }
+  ],
+  "samplePolicies": [
+    {
+      "policy_number": "POL-2024-001",
+      "policy_type": "auto",
+      "policy_holder_name": "John Smith",
+      "policy_holder_email": "john.smith@email.com",
+      "coverage_amount": 50000,
+      "premium_amount": 1200,
+      "start_date": "2024-01-01",
+      "end_date": "2025-01-01",
+      "status": "active"
+    },
+    {
+      "policy_number": "POL-2024-002",
+      "policy_type": "home",
+      "policy_holder_name": "Sarah Johnson",
+      "policy_holder_email": "sarah.j@email.com",
+      "coverage_amount": 300000,
+      "premium_amount": 2400,
+      "start_date": "2024-02-15",
+      "end_date": "2025-02-15",
+      "status": "active"
+    },
+    {
+      "policy_number": "POL-2024-003",
+      "policy_type": "health",
+      "policy_holder_name": "Michael Brown",
+      "policy_holder_email": "mbrown@email.com",
+      "coverage_amount": 100000,
+      "premium_amount": 3600,
+      "start_date": "2024-03-01",
+      "end_date": "2025-03-01",
+      "status": "active"
+    }
+  ],
+  "sampleFAQs": [
+    {
+      "category": "claims",
+      "question": "How do I file an insurance claim?",
+      "answer": "To file a claim, you can call our 24/7 claims hotline at 1-800-CLAIM-NOW, use our mobile app, or log into your account on our website. You will need your policy number, date of incident, description of what happened, and any supporting documentation like police reports or photos.",
+      "keywords": ["file", "submit", "how to", "start", "claim", "report"]
+    },
+    {
+      "category": "claims",
+      "question": "How long does it take to process a claim?",
+      "answer": "Most claims are processed within 10-15 business days. Simple claims may be approved in 3-5 days, while complex cases requiring investigation may take up to 30 days. You will receive status updates throughout the process.",
+      "keywords": ["processing time", "how long", "duration", "wait", "timeline"]
+    },
+    {
+      "category": "claims",
+      "question": "What is the status of my claim?",
+      "answer": "To check your claim status, you can ask me with your claim number (e.g., 'What is the status of claim CLM-2024-1001?'), call our claims department, or log into your online account. I can provide real-time updates on your claim progress.",
+      "keywords": ["status", "check", "update", "progress", "claim number"]
+    },
+    {
+      "category": "policies",
+      "question": "What types of insurance do you offer?",
+      "answer": "We offer comprehensive insurance coverage including: Auto Insurance, Home Insurance, Health Insurance, Life Insurance, Business Insurance, and Specialty Coverage. Each policy can be customized to meet your specific needs.",
+      "keywords": ["types", "kinds", "coverage", "offer", "available"]
+    },
+    {
+      "category": "policies",
+      "question": "How do I update my policy information?",
+      "answer": "You can update your policy information by logging into your account, calling our customer service at 1-800-555-0123, or speaking with your insurance agent. Common updates include address changes, vehicle additions, beneficiary changes, and coverage adjustments.",
+      "keywords": ["update", "change", "modify", "edit", "policy"]
+    },
+    {
+      "category": "payments",
+      "question": "What payment methods do you accept?",
+      "answer": "We accept credit cards (Visa, Mastercard, American Express), debit cards, electronic bank transfers (ACH), checks, and automatic monthly payments. You can set up autopay for convenient recurring payments.",
+      "keywords": ["payment", "pay", "methods", "how", "options"]
+    },
+    {
+      "category": "general",
+      "question": "How do I contact customer service?",
+      "answer": "You can reach us 24/7 by phone at 1-800-555-0123, via email at support@insurance.com, through our mobile app chat, or by visiting our website. For complex issues, you can also schedule an in-person appointment with a local agent.",
+      "keywords": ["contact", "phone", "email", "reach", "support"]
+    }
+  ],
+  "escalationKeywords": [
+    "speak to human",
+    "talk to agent",
+    "representative",
+    "manager",
+    "complaint",
+    "lawsuit",
+    "lawyer",
+    "attorney",
+    "fraud",
+    "dissatisfied",
+    "unhappy",
+    "unacceptable"
+  ],
+  "statusMessages": {
+    "submitted": "has been received and is awaiting initial review",
+    "under_review": "is currently under review by our claims adjuster",
+    "approved": "has been approved for payment",
+    "rejected": "has been rejected",
+    "paid": "has been processed and payment has been completed"
+  }
+}
