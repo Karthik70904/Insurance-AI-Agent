@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Load API key securely from environment variable
-API_KEY = "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"  # Set this in your environment
+API_KEY = os.getenv("OPENROUTER_API_KEY")  # Set this in your environment
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 HEADERS = {
